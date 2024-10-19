@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1>Movie Finder</h1>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="movie" placeholder="Enter movie name">
+            <button onclick="search()">Search</button>
+        </div>
+
+        <div class="result-container">
+            <img src="" id="poster" alt="Movie Poster" class="movie-poster">
+            <div class="movie-details">
+                <div class="detail"><strong>Title:</strong> <span id="title">N/A</span></div>
+                <div class="detail"><strong>Released:</strong> <span id="released">N/A</span></div>
+                <div class="detail"><strong>Country:</strong> <span id="country">N/A</span></div>
+                <div class="detail"><strong>Description:</strong> <span id="plot">N/A</span></div>
+                <div class="rating"><strong>IMDb Rating:</strong> <span id="rate">N/A</span></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Alert Modal -->
+<div id="alert-modal" class="alert-modal">
+    <div class="alert-modal-content">
+        <span id="close-alert" class="close-alert">&times;</span>
+        <p id="alert-message"></p>
+    </div>
+</div>
+
+
+    <footer>
+        <p>&copy; 2024 Movie Finder</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
